@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fettverbrennungsrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fettverbrennungsrechner</h1>
+        <form id="calorieForm">
+            <label for="fatAmount">Fettmenge (in kg):</label>
+            <input type="number" id="fatAmount" step="0.1" required>
+            <label for="calorieDeficit">Tägliches Kaloriendefizit (in Kalorien):</label>
+            <input type="number" id="calorieDeficit" step="10" required>
+            <button type="submit">Berechnen</button>
+        </form>
+        <div id="result" class="hidden">
+            <p id="daysRequired"></p>
+            <p class="note">Bitte beachten Sie, dass diese Angaben nur Durchschnittswerte sind.</p>
+        </div>
+        <footer>
+            <p><a href="impressum.html">Impressum</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
